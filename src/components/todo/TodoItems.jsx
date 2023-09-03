@@ -145,7 +145,7 @@ export default function TodoItems(props) {
                     onChange={handleChange}
                   />
                 ) : (
-                  <div className="d-flex align-items-center flex-grow-1">
+                  <div className="d-flex align-items-center w-75 flex-grow-1">
                     <input
                       type="checkbox"
                       className="form-check-input me-2 checkTodo"
@@ -158,7 +158,7 @@ export default function TodoItems(props) {
                       disabled={isLoading || isEdit}
                     />
                     <label
-                      className="form-check-label fs-6 py-3 w-100"
+                      className="form-check-label fs-6 py-3 w-100 text-truncate"
                       htmlFor={item.id}
                       style={{
                         cursor: isEdit ? "not-allowed" : "pointer",
